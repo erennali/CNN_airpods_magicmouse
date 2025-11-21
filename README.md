@@ -1,40 +1,47 @@
 # CNN Image Classification Project
 
 ## Project Overview
-This project implements three different CNN models for image classification using a custom dataset.
+This project implements three CNN approaches for a custom image dataset. Notebooks are prepared so you can run training after adding real images to `dataset/`.
 
-## Dataset
-- **Classes**: 2 classes
-- **Images per class**: 50+ images
-- **Image size**: 128x128 pixels
-- **Source**: Original photos taken with camera
+## Dataset requirements
+- Minimum 2 classes
+- At least 50 images per class (100+ total)
+- Images must be original photos taken by you
+- Image size: recommended 128x128 (min 64x64)
+- Folder structure:
 
-## Models
-1. **model1.ipynb**: Transfer Learning using pre-trained architecture
-2. **model2.ipynb**: Basic CNN architecture from scratch
-3. **model3.ipynb**: Improved CNN with hyperparameter tuning and data augmentation
-
-## Requirements
-- Python 3.x
-- TensorFlow/Keras
-- NumPy
-- Matplotlib
-- scikit-learn
-
-## Installation
-```bash
-pip install tensorflow numpy matplotlib scikit-learn
+```
+dataset/
+	class1/
+		img1.jpg
+	class2/
+		img1.jpg
 ```
 
-## Usage
-Run each notebook in order:
-1. First, prepare your dataset in `dataset/` folder
-2. Run `model1.ipynb` for transfer learning baseline
-3. Run `model2.ipynb` for basic CNN baseline
-4. Run `model3.ipynb` for optimized model
+## Notebooks
+- `model1.ipynb`: Transfer learning with VGG16 (uses ImageNet weights)
+- `model2.ipynb`: Basic CNN trained from scratch
+- `model3.ipynb`: Hyperparameter tuning, data augmentation and final model
 
-## Results
-Results will be updated after model training.
+## Installation
+Use the provided `requirements.txt` to install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## How to run
+1. Put your images into `dataset/class1/` and `dataset/class2/`.
+2. Open `model1.ipynb` and fill student info at the top cells.
+3. Run cells sequentially. If dataset is small, reduce batch size and epochs.
+4. After experiments, open `model3.ipynb` to view hyperparameter table and train best model.
+
+## Commits and style
+- Commit messages are short, English and prefixed (e.g. `feat:`, `chore:`, `docs:`).
+
+## Notes
+- Notebooks contain placeholders for student info and GitHub link. Replace them before submission.
+- Add your GitHub repo URL to the top of each notebook.
 
 ## Author
 Student project for Machine Learning course (BLG407)
