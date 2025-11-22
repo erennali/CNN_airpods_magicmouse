@@ -16,5 +16,5 @@ def organize_dataset(source_dir, target_dir, class_names):
         print(f"  - {target_dir}/{class_name}/")
 
 if __name__ == "__main__":
-    class_names = ["class1", "class2"]
+    class_names = ["airpods", "magic_mouse"]
     organize_dataset(".", "dataset", class_names)
