@@ -149,7 +149,7 @@ This interactive tool provides:
 - Student ID: 2212721021
 - Course: BLG-407 Machine Learning
 - Project: CNN Image Classification (AirPods vs Magic Mouse)
-- GitHub: https://github.com/erenalikoca/CNN_airpods_magicmouse
+- GitHub: https://github.com/erennali/CNN_airpods_magicmouse
 
 ## Project Statistics
 
